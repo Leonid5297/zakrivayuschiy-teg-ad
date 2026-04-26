@@ -2,12 +2,12 @@
 
 :root {
   /* Шрифты */
-  --font-main: 'Inter', sans-serif;
+  --font-main: 'Inter-Variable', sans-serif;
   --font-accent: 'PressStart2P', fantasy;
 
   /* Веса вариативного шрифта Inter */
   --font-weight-text: 400;
-  --font-weight-title: 700;
+  --font-weight-title: 785;
 
   --color-label-stroke: #ffffff;
 
@@ -16,24 +16,24 @@
   --default-fill-color: #ffffff;
 
   --bg-image:
-  repeating-linear-gradient(
-    to right,
-    #d3d3d3 0px,
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  repeating-linear-gradient(
-    to bottom,
-    #d3d3d3 0px,
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  linear-gradient(
-    to bottom,
-    #e7e7e7 0%,
-    #e7e7e7 0.01%,
-    #1a1a1a 100%
-  );
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0%,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
 }
