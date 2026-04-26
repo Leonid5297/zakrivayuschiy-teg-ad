@@ -405,13 +405,11 @@
           </svg>
           <span>Вставьте дискету, чтобы продолжить</span>
         </p>
-        <button type="button" class='dialog__close-button' onclick="window['dialog-id'].close()">
+        <button type="button" class="dialog__close-button">
           <span class="button__text">ОК</span>
         </button>
       </dialog>
-      <button class="card__save-button" type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id">
+      <button class="card__save-button" type="button" aria-controls="dialog-id">
         <span class="button__text">
           <svg width="21" height="21" aria-hidden="true">
             <use href="#icon-floppy"></use>
@@ -420,7 +418,15 @@
         </span>
       </button>
     </main>
- 
+
     <script src="./scripts/like.js"></script>
+    <script>
+      document.querySelector('.card__save-button').addEventListener('click', function () {
+        document.querySelector('#dialog-id').showModal();
+      });
+      document.querySelector('.dialog__close-button').addEventListener('click', function () {
+        document.querySelector('#dialog-id').close();
+      });
+    </script>
   </body>
 </html>
