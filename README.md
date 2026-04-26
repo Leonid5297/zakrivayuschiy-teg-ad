@@ -1,1 +1,1 @@
-https://leonid5297.github.io/zakrivayuschiy-teg-ad/
+https://github.com/Leonid5297/zakrivayuschiy-teg-ad
