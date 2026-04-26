@@ -420,13 +420,20 @@
     </main>
 
     <script src="./scripts/like.js"></script>
-    <script>
-      document.querySelector('.card__save-button').addEventListener('click', function () {
-        document.querySelector('#dialog-id').showModal();
-      });
-      document.querySelector('.dialog__close-button').addEventListener('click', function () {
-        document.querySelector('#dialog-id').close();
-      });
-    </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.querySelector('#dialog-id');
+    const openButton = document.querySelector('.card__save-button');
+    const closeButton = document.querySelector('.dialog__close-button');
+
+    openButton.addEventListener('click', () => {
+      dialog.showModal();
+    });
+
+    closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
+  });
+</script>
   </body>
 </html>
